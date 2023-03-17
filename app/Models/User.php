@@ -18,6 +18,11 @@ class User extends Authenticatable
     use Notifiable;
     use TwoFactorAuthenticatable;
 
+    public function posts()
+    {
+        return $this->hasOne(User_extended_detail::class);
+    }
+
     /**
      * The attributes that are mass assignable.
      *
