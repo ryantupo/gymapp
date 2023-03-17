@@ -4,19 +4,21 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
+    <div style="display:flex;flex-direction: column" class="p-10">
 
-    <div class="flex items-center py-12">
         {{--  <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-welcome />
-            </div>
-        </div>  --}}
-        <img class="mx-auto" src="{{url('/images/person1.png')}}" alt="Image" width="300" height="250"/>
-        <div id="details">
-            <h3>{{ $user->age }}</h3>
-            <h3>{{ $user->height }} {{ $user->height_unit }}</h3>
-            <h3>{{ $user->weight }} {{ $user->weight_unit }}</h3>
+                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+                    <x-welcome />
+                </div>
+            </div>  --}}
+        <img class="mx-auto" src="{{ url('/images/person1.png') }}" alt="Image" width="300" height="250" />
+        <div id="details" class="mx-auto">
+            <h3>Logged Days : {{ $data['user_details']->logged_days }}</h3>
+            <h3>Age : {{ $data['user']->age }}</h3>
+            <h3>Height : {{ $data['user']->height }} {{ $data['user']->height_unit }}</h3>
+            <h3>Weight : {{ $data['user']->weight }} {{ $data['user']->weight_unit }}</h3>
 
         </div>
+
     </div>
 </x-app-layout>
