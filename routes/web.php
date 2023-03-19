@@ -23,4 +23,9 @@ Route::middleware([
     Route::get('/', [UsersController::class, 'index'], function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::get('/today', function () {
+        return view('todays-workout');
+    })->name('todays-workout');
 });
+
