@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->integer('age')->nullable();
+            $table->string('gender')->nullable();
             $table->float('weight', 10, 2)->nullable();
             $table->string('weight_unit')->default('KG');
             $table->float('height', 10, 2)->nullable();
