@@ -81,6 +81,13 @@
                 @endif
             @endif
         </div>
+
+        <!-- Weight -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="weight" value="{{ __('Weight') }}" />
+            <x-input id="weight" type="text" class="mt-1 block w-full" wire:model.defer="state.weight" autocomplete="weight" />
+            <x-input-error for="weight" class="mt-2" />
+        </div>
     </x-slot>
 
     <x-slot name="actions">
