@@ -122,8 +122,9 @@
             <x-label for="height_unit" value="{{ __('Height_unit') }}" />
             <select id="height_unit" type="text" class="mt-1 block w-full" wire:model.defer="state.height_unit"
                 autocomplete="height_unit" />
-            <option value="FEET">Feet</option>
             <option value="CM">Cm</option>
+            <option value="FEET">Feet</option>
+
             </select>
         </div>
 
