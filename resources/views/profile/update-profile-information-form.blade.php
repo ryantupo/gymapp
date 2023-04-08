@@ -54,7 +54,8 @@
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
             <x-label for="name" value="{{ __('Name') }}" />
-            <x-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name" autocomplete="name" />
+            <x-input id="name" type="text" class="mt-1 block w-full" wire:model.defer="state.name"
+                autocomplete="name" />
             <x-input-error for="name" class="mt-2" />
         </div>
 
@@ -89,22 +90,59 @@
             <h1>Extended Details</h1>
         </div>
 
+        <!-- Gender -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="gender" value="{{ __('Gender') }}" />
+            <select id="gender" type="text" class="mt-1 block w-full" wire:model.defer="state.gender"
+                autocomplete="gender" />
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <!-- Age -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="age" value="{{ __('Age') }}" />
+            <x-input id="age" type="number" class="mt-1 block w-full" wire:model.defer="state.age"
+                autocomplete="age" />
+            <x-input-error for="age" class="mt-2" />
+        </div>
+
+        <!-- Height -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="height" value="{{ __('Height') }}" />
+            <x-input id="height" type="number" class="mt-1 block w-full" wire:model.defer="state.height"
+                autocomplete="height" />
+            <x-input-error for="height" class="mt-2" />
+        </div>
+
+        <!-- Height Unit -->
+        <div class="">
+            <x-label for="height_unit" value="{{ __('Height_unit') }}" />
+            <select id="height_unit" type="text" class="mt-1 block w-full" wire:model.defer="state.height_unit"
+                autocomplete="height_unit" />
+            <option value="FEET">Feet</option>
+            <option value="CM">Cm</option>
+            </select>
+        </div>
+
         <!-- Weight -->
         <div class="col-span-6 sm:col-span-4">
             <x-label for="weight" value="{{ __('Weight') }}" />
             <x-input id="weight" type="number" class="mt-1 block w-full" wire:model.defer="state.weight"
                 autocomplete="weight" />
             <x-input-error for="weight" class="mt-2" />
+
         </div>
 
-        <!-- Gender -->
-        <div class="col-span-6 sm:col-span-4">
-            <x-label for="gender" value="{{ __('Gender') }}" />
-            <select id="gender" type="text" class="mt-1 block w-full" wire:model.defer="state.gender"
-                autocomplete="gender" />
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Other">Other</option>
+        <!-- Weight Unit -->
+        <div class="">
+            <x-label for="weight_unit" value="{{ __('Weight_unit') }}" />
+            <select id="weight_unit" type="text" class="mt-1 block w-full" wire:model.defer="state.weight_unit"
+                autocomplete="weight_unit" />
+            <option value="KG">Kg</option>
+            <option value="LBS">Lbs</option>
             </select>
         </div>
     </x-slot>
