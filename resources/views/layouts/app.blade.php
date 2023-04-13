@@ -39,18 +39,6 @@
             </header>
         @endif
 
-        <!-- Theme Switcher Button -->
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-        </label>
-
-        $(document).ready(function() {
-            $('#theme-toggle').click(function() {
-                $('body').toggleClass('dark');
-            });
-        });
-
         <!-- Page Content -->
         <main>
             {{ $slot }}
