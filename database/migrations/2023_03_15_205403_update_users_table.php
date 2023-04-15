@@ -14,11 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer('age')->nullable();
-            $table->string('gender')->nullable();
-            $table->float('weight', 10, 2)->nullable();
+            $table->integer('age')->default(0);
+            $table->string('gender')->default('Other');
+            $table->float('weight', 10, 2)->default(0.00);
             $table->string('weight_unit')->default('KG');
-            $table->float('height', 10, 2)->nullable();
+            $table->float('height', 10, 2)->default(0.00);
             $table->string('height_unit')->default('CM');
         });
     }
