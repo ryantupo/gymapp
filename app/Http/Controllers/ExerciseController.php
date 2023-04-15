@@ -29,12 +29,10 @@ class ExerciseController extends Controller
         // Create a new Exercise and save it to the database
         $Exercise = new Exercise();
         $Exercise->name = $request->input('name');
-        $Exercise->email = $request->input('email');
-        $Exercise->password = bcrypt($request->input('password'));
         $Exercise->save();
 
         // Redirect to the index page with a success message
-        return redirect('/')->with('success', 'Exercise created successfully.');
+        return redirect('/today')->with('success', 'Exercise created successfully.');
     }
 
     public function show($id)
@@ -53,8 +51,7 @@ class ExerciseController extends Controller
     {
         // Validate the form data
         $validatedData = $request->validate([
-            'name' => 'required',
-            'muscle_group' => 'required'
+            'name' => 'required'
         ]);
 
         // Update the Exercise's data in the database
@@ -64,7 +61,7 @@ class ExerciseController extends Controller
         $Exercise->save();
 
         // Redirect to the index page with a success message
-        return redirect('/')->with('success', 'Exercise updated successfully.');
+        return redirect('/today')->with('success', 'Exercise updated successfully.');
     }
 
     public function destroy($id)
@@ -73,6 +70,6 @@ class ExerciseController extends Controller
         $Exercise->delete();
 
         // Redirect to the index page with a success message
-        return redirect('/')->with('success', 'Exercise deleted successfully.');
+        return redirect('/today')->with('success', 'Exercise deleted successfully.');
     }
 }

@@ -1,4 +1,4 @@
-INSERT INTO exercises (name, chest, back, shoulders, biceps, triceps, abs, quads, hamstrings, calves, glutes) VALUES
+INSERT INTO exercise (name, chest, back, shoulders, biceps, triceps, abs, quads, hamstrings, calves, glutes) VALUES
 ('Barbell Lunges', null, null, null, null, null, null, 0.5, 0.3, 0.2, null),
 ('Front Squats', null, null, null, null, null, null, 0.5, 0.4, 0.1, null),
 ('Romanian Deadlifts', null, 0.2, null, null, null, null, null, 0.7, 0.1, null),
@@ -10,7 +10,7 @@ INSERT INTO exercises (name, chest, back, shoulders, biceps, triceps, abs, quads
 ('Dumbbell Front Raises', null, null, 0.8, null, null, null, null, null, null, null),
 ('Hammer Curls', null, 0.1, null, 0.7, null, null, null, null, null, null);
 
-INSERT INTO exercises (name, chest, back, shoulders, biceps, triceps, abs, quads, hamstrings, calves, glutes)
+INSERT INTO exercise (name, chest, back, shoulders, biceps, triceps, abs, quads, hamstrings, calves, glutes)
 VALUES
 ('Preacher Curls', NULL, NULL, NULL, 0.1, NULL, NULL, NULL, NULL, NULL, NULL),
 ('Concentration Curls', NULL, NULL, NULL, 0.1, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -24,7 +24,7 @@ VALUES
 ('Glute-Ham Raises', NULL, 0.1, NULL, NULL, NULL, NULL, NULL, 0.3, NULL, 0.4);
 
 
-INSERT INTO exercises (name, chest, back, shoulders, biceps, triceps, forearms, abs, quads, hamstrings, calves, glutes) VALUES
+INSERT INTO exercise (name, chest, back, shoulders, biceps, triceps, forearms, abs, quads, hamstrings, calves, glutes) VALUES
 ('Side Lunges', NULL, NULL, 0.05, NULL, NULL, NULL, 0.7, 0.25, NULL, NULL, NULL),
 ('Box Jumps', NULL, NULL, 0.05, NULL, NULL, NULL, NULL, 0.95, NULL, NULL, NULL),
 ('Split Squats', NULL, NULL, 0.05, NULL, NULL, NULL, 0.6, 0.4, NULL, NULL, NULL),
@@ -38,7 +38,7 @@ INSERT INTO exercises (name, chest, back, shoulders, biceps, triceps, forearms, 
 
 
 
-INSERT INTO exercises (name, chest, back, shoulders, biceps, triceps, forearms, abs, quads, hamstrings, calves, glutes)
+INSERT INTO exercise (name, chest, back, shoulders, biceps, triceps, forearms, abs, quads, hamstrings, calves, glutes)
 VALUES
 ('Band Pull-Aparts', null, 0.4, 0.6, 0.3, 0.2, null, null, null, null, null, null),
 ('Rear Delt Flyes', null, 0.3, 0.7, null, null, null, null, null, null, null, null),
@@ -52,15 +52,15 @@ VALUES
 ('Reverse Lunges', null, null, null, null, null, null, null, 0.7, null, null, 0.3);
 
 
-INSERT INTO exercises (name, muscle_group_1, muscle_group_2, muscle_group_3, muscle_group_4, muscle_group_5, muscle_group_6)
+INSERT INTO exercise (name, chest, back, shoulders, biceps, triceps, forearms, abs, quads, hamstrings, calves, glutes)
 VALUES
-('Box Squats', 0.5, 0.8, 0.3, NULL, NULL, NULL),
-('Sumo Deadlifts', 0.8, 0.7, 0.3, 0.2, NULL, NULL),
-('Farmers Walks', 0.2, 0.5, 0.4, 0.1, NULL, NULL),
-('Sled Pushes', 0.5, 0.6, 0.4, NULL, NULL, NULL),
-('Battle Rope Slams', 0.3, 0.6, 0.2, NULL, NULL, NULL),
-('Medicine Ball Throws', 0.5, 0.7, 0.2, NULL, NULL, NULL),
-('Kettlebell Swings', 0.7, 0.3, 0.2, NULL, NULL, NULL),
-('Kettlebell Goblet Squats', 0.7, 0.8, 0.3, NULL, NULL, NULL),
-('Kettlebell Turkish Get-Ups', 0.5, 0.7, 0.4, 0.2, NULL, NULL),
-('Plyometric Box Jumps', 0.5, 0.7, 0.2, NULL, NULL, NULL);
+('Box Squats', NULL, 0.5, 0.8, NULL, NULL, NULL, NULL, 0.3, NULL, NULL, NULL),
+('Sumo Deadlifts', NULL, 0.8, 0.7, NULL, 0.2, NULL, NULL, 0.3, NULL, NULL, NULL),
+('Farmers Walks', NULL, 0.2, 0.5, NULL, 0.1, NULL, NULL, 0.4, NULL, NULL, NULL),
+('Sled Pushes', NULL, 0.5, 0.6, NULL, NULL, NULL, NULL, 0.4, NULL, NULL, NULL),
+('Battle Rope Slams', NULL, 0.3, 0.6, NULL, NULL, NULL, NULL, 0.2, NULL, NULL, NULL),
+('Medicine Ball Throws', NULL, 0.5, 0.7, NULL, NULL, NULL, NULL, 0.2, NULL, NULL, NULL),
+('Kettlebell Swings', NULL, 0.7, 0.3, NULL, NULL, NULL, NULL, 0.2, NULL, NULL, NULL),
+('Kettlebell Goblet Squats', NULL, 0.7, 0.8, NULL, NULL, NULL, NULL, 0.3, NULL, NULL, NULL),
+('Kettlebell Turkish Get-Ups', NULL, 0.5, 0.7, NULL, 0.2, NULL, NULL, 0.4, NULL, NULL, NULL),
+('Plyometric Box Jumps', NULL, 0.5, 0.7, NULL, NULL, NULL, NULL, 0.2, NULL, NULL, NULL);

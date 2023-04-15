@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             UserExtendedDetailsSeeder::class,
+            SqlSeeder::class,
             // add any other seeders you want to run here
         ]);
     }
