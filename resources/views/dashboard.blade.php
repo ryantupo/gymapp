@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        //test we got livewire working thank god XD
+        {{--  test we got livewire working thank god XD  --}}
         <livewire:test-h1 />
 
     </div>
