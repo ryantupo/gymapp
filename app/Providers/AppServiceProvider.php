@@ -4,6 +4,9 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+use App\Http\Livewire\TestH1;
+use Livewire\Livewire;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -13,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        Livewire::component('test-h1', TestH1::class);
     }
 
     /**
