@@ -21,7 +21,7 @@ class UsersController extends Controller
             $user_details = User_extended_detail::firstWhere(['user_id' => $user['id']]);
 
             $createdAt = Carbon::parse($user['created_at']);
-            $daysSinceCreation = $createdAt->diffInDays();
+            $daysSinceCreation = $createdAt->startOfDay()->diffInDays(now()->startOfDay());
 
             $data = [
                 'user' => $user,
